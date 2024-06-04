@@ -1,0 +1,12 @@
+package runners.Pet;
+
+import io.cucumber.junit.CucumberOptions;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+import org.junit.runner.RunWith;
+
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+        features = "src\\test\\resources\\features\\Pet\\delete_pet_petId.feature",
+        glue = "stepDefinitions.Pet")
+public class delete_pet_petId_Runner {
+}
